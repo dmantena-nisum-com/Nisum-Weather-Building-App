@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Project</title>
+    <!-- Adding Traceur ,which is a compiler that takes ECMAScript Edition 6 (ES6) and 
+        compiles it down to regular Javascript (ECMAScript Edition 5 [ES5]) that runs in your browser.
+
+ -->
+    <script src="https://google.github.io/traceur-compiler/bin/traceur.js"></script>
+
+    <!--  System Js module loader enabling dynamic ES module workflows in browsers and 
+        any type of module format can be loaded and it will be detected automatically by SystemJS.
+       Please do  Make sure that when running locally, ensure you are running from a local server or a browser with local XHR requests enabled .
+
+-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.31/system.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Dheeraj's Weather App !!!</h1>
+    </header>
+    <div class="main">
+        <div id="search">
+            <label for="city">City Name : </label>
+            <input type="text" id="city" placeholder="Enter City ...">
+            <button type="button">Show Weather!</button>
+        </div>
+        <!-- The Elements below are hidden by CSS which is inturn used while displaying the fetched  data from the server -->
+        <div id="load">Loading...</div>
+        <div id="weather">
+            <h1 id="weatherCity">City Name</h1>
+
+            <div id="weatherDescription">Weather Description</div>
+            <div id="weatherTemperature">Temperature</div>
+
+        </div>
+    </div>
+    <script>
+        System.import('app.js');
+    </script>
+</body>
+
+</html>
