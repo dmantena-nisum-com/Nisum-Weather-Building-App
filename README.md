@@ -9,7 +9,7 @@ Project with Es6 .
 ## Quick start
 
 1. Clone this repo with `git clone`.
-1. Open in http protocol (lite-server) .
+1. Open with http protocol (lite-server) .
 
 
 ## Browser Support
